@@ -1,4 +1,8 @@
-
+"""
+new Env('携趣更新IP');
+9 9 9 9 * xiequIpdateIpWhite.py
+by:fjcqv
+"""
 import requests
 import re
 import os
