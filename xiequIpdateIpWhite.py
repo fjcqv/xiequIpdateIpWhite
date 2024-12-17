@@ -8,7 +8,7 @@ import re
 import os
 def getIP():
     try:
-        r=requests.get("https://api.ipify.org/")
+        r=requests.get("http://ident.me/")
         if r.status_code==200:
             return r.text
         return False
@@ -28,8 +28,6 @@ def xiequ(xiequAPI,ip_str):
             "{}&act=add&ip={}".format(xiequAPI,ip_str))
         if r1.status_code == 200:
             print("添加一条记录：{}".format(r2.text))
-
-
     except:
         pass
 if __name__ == '__main__':
